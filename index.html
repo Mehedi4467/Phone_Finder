@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Finder</title>
+    <!-- main css link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- header area or search box html start here  -->
+    <header class="container">
+        <!-- search box  -->
+        <div class="text-center col-12 mt-3 shadow-lg p-4 rounded-3">
+            <h1 class="text-primary">Phone Finder</h1>
+            <div class="my-4 col-12 col-md-6 mx-auto d-flex gap-2">
+                <div class="w-100">
+                    <input type="text" class="form-control" id="search-input" aria-describedby="emailHelp" placeholder="Find Your Phone">
+                    <p id="error" class="displayHide form-text text-danger">Please Search Phone By Phone Name!!</p>
+                </div>
+                <div><button id="search-btn" class="btn btn-primary">Search</button></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main body  -->
+    <main class="container">
+
+        <!-- spinner html start  -->
+        <div id="spinner" class="displayHide justify-content-center mt-5">
+            <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- phone no found -->
+        <div id="notFound" class="displayHide justify-content-center">
+            <div class="col-12 col-md-6 shadow-lg mt-5 p-5">
+                <h1 class="text-warning text-center">Oops!! No phone found</h1>
+            </div>
+        </div>
+
+        <!-- phone display area html -->
+        <div class="mt-5 d-block">
+            <div class="row gy-4" id="display-phone">
+
+            </div>
+
+            <!-- see all phone html start  -->
+            <div id="all-data" class="displayHide justify-content-center my-5">
+                <button id="all-phone" class="btn btn-primary">See All Phone</button>
+            </div>
+
+            <!-- image Details modal html start here  -->
+            <div id="myModal"></div>
+
+    </main>
+
+
+
+
+    <!-- main js link  -->
+    <script src="js/main.js"></script>
+    <!-- bootsrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
